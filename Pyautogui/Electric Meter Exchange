@@ -1,0 +1,109 @@
+import pyautogui
+import time
+
+# time.sleep(5)
+
+# print(pyautogui.position())
+
+# # MS Excel copy
+pyautogui.leftClick(332,-1010)
+pyautogui.rightClick(332,-1010)
+pyautogui.typewrite("c")
+
+# # Paste and raise work
+pyautogui.leftClick(1007,1049)
+pyautogui.rightClick(945,797)
+pyautogui.typewrite("p")                    
+pyautogui.rightClick(957,703)
+pyautogui.typewrite("a")
+pyautogui.rightClick(1276,602)
+time.sleep(5)
+
+# # Work Request date and time
+pyautogui.rightClick(926,396)
+pyautogui.typewrite("e")
+pyautogui.rightClick(926,396)
+for i in range(3):
+    pyautogui.press("TAB")
+pyautogui.typewrite("12/10")
+pyautogui.press("TAB")
+pyautogui.typewrite("8")
+pyautogui.press("TAB")
+pyautogui.typewrite("13/10")
+pyautogui.press("TAB")
+pyautogui.typewrite("12")
+for i in range(4):
+    pyautogui.press("TAB")
+pyautogui.press("ENTER")
+
+# # Work in interface
+time.sleep(3)
+pyautogui.doubleClick(885,740)
+pyautogui.leftClick(650,787)
+
+# # Job Segment
+time.sleep(10)
+time.sleep(5)
+pyautogui.leftClick(177,-1005)
+pyautogui.rightClick(177,-1005)
+pyautogui.typewrite("c")
+pyautogui.leftClick(1007,1049)
+pyautogui.rightClick(620,563)
+pyautogui.typewrite("p")
+pyautogui.press("TAB")
+pyautogui.press("ENTER")
+pyautogui.typewrite("12")
+for i in range(5):
+    pyautogui.press("TAB")
+for i in range(5):
+    pyautogui.typewrite("r")
+
+# # Metering System Segment
+pyautogui.hotkey('ctrl', 'tab')
+pyautogui.rightClick(666,719)
+for i in range(8):
+    pyautogui.press("TAB")
+pyautogui.hotkey('ctrl', 'v')
+
+# # Meters Segment
+pyautogui.hotkey('ctrl', 'tab')
+
+# # Excel Copy New Serial Number
+time.sleep(3)
+pyautogui.leftClick(811,-1012)
+pyautogui.rightClick(811,-1012)
+pyautogui.typewrite("c")
+
+# # Paste New Serial Into MOP
+pyautogui.leftClick(1262, 508)
+for i in range(5): 
+    pyautogui.typewrite("s")
+pyautogui.press("ESC")
+pyautogui.press("TAB")
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press("TAB")
+pyautogui.typewrite("1")
+pyautogui.press("TAB")
+pyautogui.typewrite("01")
+
+# # Adding Zeros for Prepayments at Meters Section
+pyautogui.leftClick(627,742)
+for i in range(18):
+    pyautogui.press("TAB")
+pyautogui.typewrite("0")
+for i in range(2):
+    pyautogui.press("TAB")
+for i in range(6):
+    pyautogui.typewrite("0")
+    pyautogui.press("TAB")
+pyautogui.press("TAB")
+for i in range(2):
+    pyautogui.typewrite("0")
+    pyautogui.press("TAB")
+pyautogui.press("TAB")
+pyautogui.typewrite("0")
+
+# # Switching to Registers Segment to Add Zero to Prepay Section
+pyautogui.hotkey('ctrl', 'tab')
+pyautogui.leftClick(584, 712)
+pyautogui.typewrite("0")
