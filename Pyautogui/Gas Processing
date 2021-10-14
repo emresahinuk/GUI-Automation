@@ -1,6 +1,0 @@
-import pyautogui, sys
-
-
-pyautogui.write('Hello world!')
-
-pyautogui.click(x=100, y=200,button='right')
